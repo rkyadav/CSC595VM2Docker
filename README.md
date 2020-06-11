@@ -21,6 +21,8 @@ Navigate to vm2docker repository
 Call ‘time docker build . -t ubuntu\chef’ to copy chef server vm into image
 Call ‘docker run ubuntu\chef’ to load docker container
 
+Chef - Docker Hub
+docker pull cbuisson/chef-server
 
 
 
