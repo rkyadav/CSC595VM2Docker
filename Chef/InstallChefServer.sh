@@ -4,5 +4,4 @@ sudo dpkg -i chef-server-core_*.deb
 rm chef-server-core_*.deb
 sudo chef-server-ctl reconfigure
 mkdir .chef
-sudo chef-server-ctl user-create ryadav Rakesh Yadav 'ryadav@test.com' 'PASSWORD' --filename ~/.chef/ryadav.pem
-sudo chef-server-ctl org-create ryadavinc "Rakesh Yadav Inc" --association_user ryadav --filename ~/.chef/ryadavinc.pem
+
