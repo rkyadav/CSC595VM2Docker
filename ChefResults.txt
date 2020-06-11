@@ -19,4 +19,4 @@ REPOSITORY             TAG                 IMAGE ID            CREATED          
 cbuisson/chef-server   latest              f55303a0efa7        15 months ago       1.11GB
 
 
-diff = vm2docker(459) - cbuisson/chef-server(1.11) = -651 mb 
+diff = vm2docker(459) - cbuisson/chef-server(1.11) = -651 mb D
