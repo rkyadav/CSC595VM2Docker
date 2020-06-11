@@ -1,0 +1,22 @@
+Chef server installation
+Run ChefServer install = 10-12 min = /dev/sda1       30309264 4362696  25930184  15% /
+run vm2docker = 2min53.824s = size 459
+real    2m51.794s
+user    0m0.111s
+sys     0m0.080s
+<none>              <none>              a069b69e14cc        28 seconds ago      459MB
+ubuntu              18.04               c3c304cb4f22        6 weeks ago         64.2MB
+
+diff = 4362 - 459 = 3903
+
+
+time docker pull cbuisson/chef-server
+real    1m46.423s
+user    0m0.054s
+sys     0m0.070s
+root@cheftest:/home/devops/CSC595VM2Docker# docker image ls
+REPOSITORY             TAG                 IMAGE ID            CREATED             SIZE
+cbuisson/chef-server   latest              f55303a0efa7        15 months ago       1.11GB
+
+
+diff = vm2docker(459) - cbuisson/chef-server(1.11) = -651 mb 
