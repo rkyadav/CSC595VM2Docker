@@ -1,0 +1,38 @@
+Base Ubuntu Image = 
+Time taken 1st try = 2 min 11.131s
+2nd result = 0.155s
+Size 
+base ubuntu = 197mb
+vm2docker = 410 mb
+vm size = 30 GB = /dev/sda1       30309264 2390040  27902840   8% / used
+dif = 2390 - 410 = 1980 mb 
+
+used docker system prune -a to clear docker cache to run a clean test 
+
+2nd run = real    2m12.738s
+
+0m5.461s to download plain ubuntu 14.04 image
+basic ubuntu 14.04 docker file with update = 32.056s = size 210 mb
+
+
+Chef server installation
+Run ChefServer install = 10-12 min = /dev/sda1       30309264 4362696  25930184  15% /
+run vm2docker = 2min53.824s = size 459
+real    2m51.794s
+user    0m0.111s
+sys     0m0.080s
+<none>              <none>              a069b69e14cc        28 seconds ago      459MB
+ubuntu              18.04               c3c304cb4f22        6 weeks ago         64.2MB
+
+diff = 4362 - 459 = 3903
+
+
+time docker pull cbuisson/chef-server
+real    1m46.423s
+user    0m0.054s
+sys     0m0.070s
+root@cheftest:/home/devops/CSC595VM2Docker# docker image ls
+REPOSITORY             TAG                 IMAGE ID            CREATED             SIZE
+cbuisson/chef-server   latest              f55303a0efa7        15 months ago       1.11GB
+
+
