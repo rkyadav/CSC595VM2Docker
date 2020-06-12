@@ -2,11 +2,17 @@
 
 Instructions
 
+All intructions were run as sudo and on the same vm that is being copied
+
 Install docker by running DockerInstall.sh
 
 Install all necessary installations for you test vm(chef server, large files, etc)
 
 Navigate to vm2docker repository
+
+cd agent
+
+Call ./agent 
 
 Call ‘time docker build . -t ubuntu\firstrun’ to copy current vm into image
 
